@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { withProviders } from './providers';
 
 import { ReturnComponentType } from 'shared/types/ReturnComponentType';
 
-const App: FC = (): ReturnComponentType => {
+const App: () => ReturnComponentType = () => {
   return <div />;
 };
 
-export default App;
+export default withProviders(App);
